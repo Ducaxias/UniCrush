@@ -1,3 +1,77 @@
-body{
-    background-color: white;
+body {
+    width: auto;
+    height: 1600px;
+    background-color: $corsegundaria;
+
+    div {
+        width: auto;
+        height: calc(720px - 120px);
+
+        &.Sobre {
+            position: relative;
+            top: 350px;
+
+            h1 {
+                font-size: 32px;
+                font-weight: 600;
+                color: $corprincipal;
+                margin: 0 50px;
+            }
+
+            article {
+                width: 1400px;
+                margin: 0 50px;
+
+                p {
+                    font-size: 20px;
+                    text-indent: 20px;
+                    text-align: justify;
+                    margin: 25px 0px;
+                }
+            }
+        }
+
+        &.Fofoquinhas {
+            section {
+                h1 {
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: $corprincipal;
+                    margin: 0 50px;
+                }
+            }
+        }
+
+        &.Amoroso {
+            section {
+                h1 {
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: $corprincipal;
+                    margin: 0 50px;
+                }
+            }
+        }
+    }
+
+    footer {
+        width: auto;
+        height: 300px;
+        background-color: $corprincipal;
+        position: flex;
+        top: 1900px;
+
+        img {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 100px;
+            margin: 10px 10px 10px 60px;
+            cursor: pointer;
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow: -20px 20px 60px #bebebe,
+                20px -20px 60px #ffffff;
+        }
+    }
 }

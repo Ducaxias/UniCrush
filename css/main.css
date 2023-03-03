@@ -70,7 +70,63 @@ header nav button:hover {
 }
 
 body {
+  width: auto;
+  height: 1600px;
   background-color: white;
+}
+body div {
+  width: auto;
+  height: 600px;
+}
+body div.Sobre {
+  position: relative;
+  top: 350px;
+}
+body div.Sobre h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: purple;
+  margin: 0 50px;
+}
+body div.Sobre article {
+  width: 1400px;
+  margin: 0 50px;
+}
+body div.Sobre article p {
+  font-size: 20px;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 25px 0px;
+}
+body div.Fofoquinhas section h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: purple;
+  margin: 0 50px;
+}
+body div.Amoroso section h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: purple;
+  margin: 0 50px;
+}
+body footer {
+  width: auto;
+  height: 300px;
+  background-color: purple;
+  position: flex;
+  top: 1900px;
+}
+body footer img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  margin: 10px 10px 10px 60px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
 }
 
 * {
@@ -79,6 +135,18 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Popins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, purple);
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, rgb(82, 0, 82));
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,3 +7,16 @@
     text-decoration: none;
     font-family: 'Popins', sans-serif;
 }
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient( transparent, $corprincipal);
+    border-radius: 15px;
+    
+    &:hover{
+        background: linear-gradient( transparent, rgb(82, 0, 82))
+    }
+}
