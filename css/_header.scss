@@ -4,16 +4,25 @@ $corpadrao: black;
 
 header {
   max-width: auto;
-  height: 80px;
+  height: 120px;
   background-color: $corpadrao;
 
+  .logo img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 10px 10px 10px 60px;
+    cursor: pointer;
+  }
 
   nav {
-    width: 1480px;
+    width: 980px;
     height: 48px;
     margin: 10px;
-    position: flex;
     display: flex;
+    position: absolute;
+    top: 15px;
+    left: 450px;
     justify-content: space-between;
 
     h1 {
@@ -40,7 +49,7 @@ header {
         a {
           font-size: 20px;
           font-weight: 600;
-          color: $corprincipal;
+          color: $corsegundaria;
           margin: 0 25px;
           text-transform: uppercase;
 
@@ -52,13 +61,14 @@ header {
     }
 
     button {
-      width: 120px;
+      width: 170px;
       height: 40px;
       border: none;
       color: $corsegundaria;
       background-color: $corprincipal;
       border-radius: 40px;
       text-transform: uppercase;
+      font-size: 20px;
       font-weight: 600;
       margin: 20px;
       cursor: pointer;
