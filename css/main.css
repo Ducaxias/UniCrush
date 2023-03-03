@@ -1,7 +1,7 @@
 header {
   max-width: auto;
   height: 80px;
-  background-color: white;
+  background-color: black;
 }
 header nav {
   width: 1480px;
@@ -17,7 +17,7 @@ header nav h1 {
   font-weight: 700;
   text-transform: uppercase;
   margin: 24px;
-  color: pink;
+  color: purple;
   padding: 6px;
 }
 header nav div {
@@ -34,19 +34,19 @@ header nav div ul {
 header nav div ul a {
   font-size: 20px;
   font-weight: 600;
-  color: pink;
+  color: purple;
   margin: 0 25px;
   text-transform: uppercase;
 }
 header nav div ul a:hover {
-  border-bottom: pink solid 4px;
+  border-bottom: purple solid 4px;
 }
 header nav button {
   width: 120px;
   height: 40px;
   border: none;
   color: white;
-  background-color: pink;
+  background-color: purple;
   border-radius: 40px;
   text-transform: uppercase;
   font-weight: 600;
@@ -54,8 +54,8 @@ header nav button {
   cursor: pointer;
 }
 header nav button:hover {
-  border: pink solid 4px;
-  color: pink;
+  border: purple solid 4px;
+  color: purple;
   background-color: white;
 }
 

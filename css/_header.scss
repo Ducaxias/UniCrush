@@ -1,9 +1,12 @@
-$corprincipal: pink;
+$corprincipal: purple;
+$corsegundaria: white;
+$corpadrao: black;
 
 header {
   max-width: auto;
   height: 80px;
-  background-color: white;
+  background-color: $corpadrao;
+
 
   nav {
     width: 1480px;
@@ -52,7 +55,7 @@ header {
       width: 120px;
       height: 40px;
       border: none;
-      color: white;
+      color: $corsegundaria;
       background-color: $corprincipal;
       border-radius: 40px;
       text-transform: uppercase;
@@ -63,7 +66,7 @@ header {
       &:hover {
         border: $corprincipal solid 4px;
         color: $corprincipal;
-        background-color: white;
+        background-color: $corsegundaria;
       }
     }
   }
