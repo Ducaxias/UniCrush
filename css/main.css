@@ -1,0 +1,74 @@
+header {
+  max-width: auto;
+  height: 80px;
+  background-color: white;
+}
+header nav {
+  width: 1480px;
+  height: 48px;
+  margin: 10px;
+  position: flex;
+  display: flex;
+  justify-content: space-between;
+}
+header nav h1 {
+  height: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 24px;
+  color: pink;
+  padding: 6px;
+}
+header nav div {
+  width: 600px;
+  height: 60px;
+}
+header nav div ul {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px;
+}
+header nav div ul a {
+  font-size: 20px;
+  font-weight: 600;
+  color: pink;
+  margin: 0 25px;
+  text-transform: uppercase;
+}
+header nav div ul a:hover {
+  border-bottom: pink solid 4px;
+}
+header nav button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: pink;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 20px;
+  cursor: pointer;
+}
+header nav button:hover {
+  border: pink solid 4px;
+  color: pink;
+  background-color: white;
+}
+
+body {
+  background-color: white;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Popins", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
