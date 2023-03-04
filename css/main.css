@@ -2,8 +2,9 @@ header {
   max-width: auto;
   height: 120px;
   background-color: black;
+  position: flex;
 }
-header .logo img {
+header div a img {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -15,6 +16,7 @@ header nav {
   height: 48px;
   margin: 10px;
   display: flex;
+  align-self: center;
   position: absolute;
   top: 15px;
   left: 450px;
@@ -26,7 +28,7 @@ header nav h1 {
   font-weight: 700;
   text-transform: uppercase;
   margin: 24px;
-  color: purple;
+  color: #800080;
   padding: 6px;
 }
 header nav div {
@@ -48,14 +50,14 @@ header nav div ul a {
   text-transform: uppercase;
 }
 header nav div ul a:hover {
-  border-bottom: purple solid 4px;
+  border-bottom: #800080 solid 4px;
 }
 header nav button {
   width: 170px;
   height: 40px;
   border: none;
   color: white;
-  background-color: purple;
+  background-color: #800080;
   border-radius: 40px;
   text-transform: uppercase;
   font-size: 20px;
@@ -64,13 +66,198 @@ header nav button {
   cursor: pointer;
 }
 header nav button:hover {
-  border: purple solid 4px;
-  color: purple;
+  border: #800080 solid 4px;
+  color: #800080;
   background-color: white;
 }
 
 body {
+  width: auto;
+  min-width: 800px;
+  height: 400vh;
   background-color: white;
+  font-family: "Popins";
+}
+body main {
+  max-width: 1200px;
+  height: 342vh;
+}
+body main div.tudo {
+  height: 800px;
+}
+body main div.tudo span {
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  left: 470px;
+  top: -320px;
+  color: white;
+}
+body main div.tudo section {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 150px;
+  position: relative;
+  top: 300px;
+}
+body main div.tudo section .card {
+  width: 300px;
+  height: 400px;
+  background-color: #800080;
+  border: solid 4px black;
+  border-radius: 10px;
+  z-index: 1;
+}
+body main div.tudo section .card .icon {
+  z-index: 2;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 80px;
+  left: 80px;
+}
+body main div.tudo section .card .links {
+  z-index: 2;
+  width: 250px;
+  height: 50px;
+  border: solid 4px black;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  top: 155px;
+  left: 20px;
+}
+body main div.tudo section .card .links .logo-insta {
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  margin: 9px;
+  position: relative;
+  left: 100px;
+}
+body main div.tudo section .card .Nome {
+  z-index: 2;
+  width: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 100px;
+  left: 80px;
+}
+body main div.tudo section .card .Cargo {
+  z-index: 2;
+  width: 150px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 110px;
+  left: 90px;
+}
+body main div.tudo section div.text {
+  max-width: 800px;
+  height: 200px;
+  flex-direction: column;
+}
+body main div.tudo section div article {
+  margin: 0 50px;
+  max-width: 800px;
+}
+body main div.tudo section div article h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+body main div.tudo section div article p {
+  font-size: 20px;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 25px 0px;
+}
+body main div.tudo .dados {
+  width: 800px;
+  height: 200px;
+  position: relative;
+  top: 100px;
+  left: 600px;
+}
+body main div.tudo .dados table {
+  width: 700px;
+  height: 90px;
+  margin: 105px 10px 10px 10px;
+  border: solid 4px black;
+  border-radius: 10px;
+}
+body main div.tudo .dados table .linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 20px;
+  background-color: #800080;
+  border-radius: 6px;
+}
+body main div.tudo .dados table .linha th {
+  font-size: 20px;
+  font-weight: 700px;
+  margin: 0 25px;
+  color: white;
+}
+body main div.tudo .dados table .coluna {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: 20px;
+}
+body main div.tudo .dados table .coluna td {
+  margin: 0 40px;
+}
+body div.Fofoquinhas {
+  width: auto;
+  height: 720px;
+}
+body div.Fofoquinhas h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #800080;
+  margin: 0 50px;
+}
+body div.Fofoquinhas section {
+  width: auto;
+  height: 1200px;
+  display: flex;
+}
+body div.Amoroso {
+  width: auto;
+  height: 900px;
+}
+body div.Amoroso section {
+  width: auto;
+}
+body div.Amoroso section h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #800080;
+  margin: 0 50px;
+}
+body footer {
+  width: auto;
+  height: 300px;
+  background-color: #800080;
+}
+body footer img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  margin: 10px 10px 10px 60px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
 }
 
 * {
@@ -79,6 +266,18 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Popins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #800080);
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, rgb(82, 0, 82));
 }
 
 /*# sourceMappingURL=main.css.map */
