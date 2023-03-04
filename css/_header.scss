@@ -1,4 +1,4 @@
-$corprincipal: purple;
+$corprincipal: #800080;
 $corsegundaria: white;
 $corpadrao: black;
 
@@ -6,8 +6,9 @@ header {
   max-width: auto;
   height: 120px;
   background-color: $corpadrao;
+  position: flex;
 
-  .logo img{
+  div a img{
     width: 100px;
     height: 100px;
     position: absolute;
@@ -20,6 +21,7 @@ header {
     height: 48px;
     margin: 10px;
     display: flex;
+    align-self: center;
     position: absolute;
     top: 15px;
     left: 450px;

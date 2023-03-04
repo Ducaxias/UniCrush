@@ -2,8 +2,9 @@ header {
   max-width: auto;
   height: 120px;
   background-color: black;
+  position: flex;
 }
-header .logo img {
+header div a img {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -15,6 +16,7 @@ header nav {
   height: 48px;
   margin: 10px;
   display: flex;
+  align-self: center;
   position: absolute;
   top: 15px;
   left: 450px;
@@ -26,7 +28,7 @@ header nav h1 {
   font-weight: 700;
   text-transform: uppercase;
   margin: 24px;
-  color: purple;
+  color: #800080;
   padding: 6px;
 }
 header nav div {
@@ -48,14 +50,14 @@ header nav div ul a {
   text-transform: uppercase;
 }
 header nav div ul a:hover {
-  border-bottom: purple solid 4px;
+  border-bottom: #800080 solid 4px;
 }
 header nav button {
   width: 170px;
   height: 40px;
   border: none;
   color: white;
-  background-color: purple;
+  background-color: #800080;
   border-radius: 40px;
   text-transform: uppercase;
   font-size: 20px;
@@ -64,58 +66,130 @@ header nav button {
   cursor: pointer;
 }
 header nav button:hover {
-  border: purple solid 4px;
-  color: purple;
+  border: #800080 solid 4px;
+  color: #800080;
   background-color: white;
 }
 
 body {
   width: auto;
-  height: 1600px;
+  min-width: 800px;
+  height: 400vh;
   background-color: white;
+  font-family: "Popins";
 }
-body div {
-  width: auto;
-  height: 600px;
+body main {
+  max-width: 1200px;
+  height: 342vh;
 }
-body div.Sobre {
+body main div.Sobre {
+  height: 900px;
+}
+body main div.Sobre span {
+  font-size: 32px;
+  font-weight: bold;
   position: relative;
-  top: 350px;
+  left: 470px;
+  top: -320px;
+  color: white;
 }
-body div.Sobre h1 {
-  font-size: 32px;
-  font-weight: 600;
-  color: purple;
-  margin: 0 50px;
+body main div.Sobre section {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 150px;
+  position: relative;
+  top: 300px;
 }
-body div.Sobre article {
-  width: 1400px;
-  margin: 0 50px;
+body main div.Sobre section .card {
+  width: 300px;
+  height: 400px;
+  background-color: #800080;
+  border: solid 4px black;
+  border-radius: 10px;
+  z-index: 1;
 }
-body div.Sobre article p {
+body main div.Sobre section .card .icon {
+  z-index: 2;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 80px;
+  left: 80px;
+}
+body main div.Sobre section .card .links {
+  z-index: 2;
+  width: 250px;
+  height: 50px;
+  border: solid 4px black;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  top: 155px;
+  left: 20px;
+}
+body main div.Sobre section .card .links .logo-insta {
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  margin: 9px;
+  position: relative;
+  left: 100px;
+}
+body main div.Sobre section .card .Nome {
+  z-index: 2;
+  width: 150px;
   font-size: 20px;
-  text-indent: 20px;
-  text-align: justify;
-  margin: 25px 0px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 100px;
+  left: 80px;
 }
-body div.Fofoquinhas section h1 {
+body main div.Sobre section .card .Cargo {
+  z-index: 2;
+  width: 150px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 110px;
+  left: 90px;
+}
+body div.Fofoquinhas {
+  width: auto;
+  height: 720px;
+}
+body div.Fofoquinhas h1 {
   font-size: 32px;
   font-weight: 600;
-  color: purple;
+  color: #800080;
   margin: 0 50px;
+}
+body div.Fofoquinhas section {
+  width: auto;
+  height: 1200px;
+  display: flex;
+}
+body div.Amoroso {
+  width: auto;
+  height: 900px;
+}
+body div.Amoroso section {
+  width: auto;
 }
 body div.Amoroso section h1 {
   font-size: 32px;
   font-weight: 600;
-  color: purple;
+  color: #800080;
   margin: 0 50px;
 }
 body footer {
   width: auto;
   height: 300px;
-  background-color: purple;
-  position: flex;
-  top: 1900px;
+  background-color: #800080;
 }
 body footer img {
   width: 100px;
@@ -142,7 +216,7 @@ body footer img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, purple);
+  background: linear-gradient(transparent, #800080);
   border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb:hover {
