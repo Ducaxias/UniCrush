@@ -10,8 +10,9 @@ body {
         height: 342vh;
 
         div {
-            &.Sobre {
-                height: 900px;
+
+            &.tudo {
+                height: 800px;
 
                 span {
                     font-size: 32px;
@@ -94,8 +95,80 @@ body {
                             left: 90px;
                         }
                     }
+
+                    div {
+                        
+                        &.text{
+                            max-width: 800px;
+                            height: 200px;
+                            flex-direction: column;
+                        }
+
+                        article {
+                            margin: 0 50px;
+                            max-width: 800px;
+
+                            h2 {
+                                font-size: 32px;
+                                font-weight: 700;
+                                margin-bottom: 50px;
+                            }
+
+                            p {
+                                font-size: 20px;
+                                text-indent: 20px;
+                                text-align: justify;
+                                margin: 25px 0px;
+                            }
+                        }
+                    }
+
                 }
 
+                .dados{
+                    width: 800px;
+                    height: 200px;
+                    position: relative;
+                    top: 100px;
+                    left: 600px;
+
+                    table{
+                        
+                        width: 700px;
+                        height: 90px;
+                        margin: 105px 10px 10px 10px;
+                        border: solid 4px $corpadrao;
+                        border-radius: 10px;
+
+                        .linha{
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 50px;
+                            margin-bottom: 20px;
+                            background-color: $corprincipal;
+                            border-radius: 6px;
+                            
+                            th{
+                                font-size: 20px;
+                                font-weight: 700px;
+                                margin: 0 25px;
+                                color: $corsegundaria;
+                            }
+                        }
+                        
+                        .coluna{
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 50px;
+                            font-size: 20px;
+
+                            td{
+                                margin: 0 40px;
+                            }
+                        }
+
+                    }
+                }
             }
         }
 
